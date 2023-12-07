@@ -126,8 +126,8 @@
           <div class="hero-content">
 
             <h1 class="h1 section-title">
-              Empower your Journey. <span class="span"><strong>Translation</strong></span> made Easy!
-            </h1>
+              <span class="span"><strong><span id="element"></strong></span> 
+            </h1>
 
             <p class="hero-text">
               Platform for English to Indian regional Language Translation
@@ -159,6 +159,13 @@
 
         </div>
       </section>
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <script>
+          var typed = new Typed('#element', {
+              strings: ['Empower your Journey. Translation made Easy!..'],
+              typeSpeed: 50,
+          });
+      </script>
 
       <section class="section category" aria-label="category">
         <div class="container">
