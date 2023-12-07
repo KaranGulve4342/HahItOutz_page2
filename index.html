@@ -41,6 +41,7 @@
   <link rel="preload" as="image" href="hero-shape-1.svg">
   <link rel="preload" as="image" href="hero-shape-2.png">
 
+
 </head>
 
 <body id="top">
@@ -76,7 +77,7 @@
           </li>
 
           <li class="navbar-item">
-            <a href="#about" class="navbar-link" data-nav-link>Translation Services</a>
+            <a href="#about" class="navbar-link" data-nav-link>Text Summarizer</a>
           </li>
 
           <li class="navbar-item">
@@ -104,18 +105,6 @@
           <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
         </button>
 
-        <!-- <button class="header-action-btn" aria-label="cart" title="Cart">
-          <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
-
-          <span class="btn-badge">0</span>
-        </button> -->
-
-        <!-- <a href="#" class="btn has-before">
-          <span class="span">Premium</span>
-
-          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-        </a> -->
-
         <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
           <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
         </button>
@@ -128,17 +117,9 @@
   </header>
 
 
-
-
-
   <main>
     <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="section hero has-bg-image" id="home" aria-label="home"
+  <section class="section hero has-bg-image" id="home" aria-label="home"
         style="background-image: url('hero-bg.svg')">
         <div class="container">
 
@@ -179,14 +160,6 @@
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #CATEGORY
-      -->
-
       <section class="section category" aria-label="category">
         <div class="container">
 
@@ -199,31 +172,7 @@
           <p class="section-text">
             From English to Regional, We've Got You Covered
           </p>
-
-          <!-- <ul class="grid-list">
-
-            <li>
-              <div class="category-card" style="--color: 500, 75%, 41%">
-
-                <div class="card-icon">
-                  <img src="—Pngtree—upload cloud vector icon_3876265.png" width="40" height="40" loading="lazy"
-                    alt="Online Degree Programs" class="img">
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Online Degree Programs</a>
-                </h3>
-
-                <p class="card-text">
-                  Lorem ipsum dolor consec tur elit adicing sed umod tempor.
-                </p>
-
-                <button class="btn"><span class="card-badge">Browse</span></button>
-
-              </div>
-            </li> -->
-
-            <li> 
+          <li> 
               <div class="category-card card1" style="--color: 500, 75%, 41%">
                 <div class="ocr">
                   <!-- <h1>Image And PDF OCR Tool</h1> -->
@@ -240,9 +189,18 @@
                   <h2 class="message"></h2>
                   <span>Select a File</span> -->
                   <input type="file" class="file">
-                  <button class="btn1"><strong>Extract Text</strong></button>
+                  <!-- <button class="btn1 "><strong>Extract Text</strong></button> -->
+                  <button type="button" class="btn btn-danger  btn1">Extract text</button>
                   <span>Result Text</span>
-                  <textarea class="texttext"></textarea>
+                  <!-- <textarea class="texttext"></textarea> -->
+                  <!-- <textarea class="texttext" style="background-color: white; font-size: large;"
+                    class="w-11/12 md:h-2/3 m-2 p-2 border-blue-900 rounded-lg border self-center justify-center"
+                    name="data" id="data" cols="30" rows="10" placeholder="Enter your text"
+                    required="required" font-style = "comic-sans"></textarea> -->
+                  <textarea class="texttext" style="font-family: 'Comic Sans MS', cursive; color: black; background-color: white; font-size: large;"
+                  class="w-11/12 md:h-2/3 m-2 p-2 border-blue-900 rounded-lg border self-center justify-center"
+                  name="data" id="data" cols="30" rows="10" placeholder="Enter your text" required="required"></textarea>
+
               </div>
               <script>
                   let api = "https://script.google.com/macros/s/AKfycby2EVLP-OcmMU0SUu1rkSMLwhkiW762tvRd7caRiaCXSUsf0B8mimAvXd_-JY7KN9zS/exec";
@@ -276,8 +234,11 @@
                 <style>
                   
                   .ocr .btn1{
+                    justify-content: center;
+                    align-items: center;
                     width : 30%;
-                    margin-left: 35%;
+                    margin-left: 42%;
+                    margin-top: 20px;
                     font-family: 'poppins';
                     
                   }
@@ -315,27 +276,7 @@
               </div>
             </li>
 
-            <!-- <li>
-              <div class="category-card" style="--color: 229, 75%, 58%">
-
-                <div class="card-icon">
-                  <img src="./assets/images/category-3.svg" width="40" height="40" loading="lazy"
-                    alt="Off-Campus Programs" class="img">
-                </div>
-
-                <h3 class="h3">
-                  <a href="#" class="card-title">Off-Campus Programs</a>
-                </h3>
-
-                <p class="card-text">
-                  Lorem ipsum dolor consec tur elit adicing sed umod tempor.
-                </p>
-
-                <span class="card-badge">8 Courses</span>
-
-              </div>
-            </li>
-
+            
             <li>
               <div class="category-card" style="--color: 42, 94%, 55%">
 
@@ -357,7 +298,7 @@
               </div>
             </li> -->
 
-          <!-- </ul> -->
+          
           <div>
             
           </div>
@@ -370,8 +311,7 @@
             <ul class="controls">
               <li class="row from">
                 <div class="icons">
-                  <!-- <ion-icon id="from" name="volume-medium-outline"></ion-icon>
-                  <ion-icon id="from" name="copy-outline"></ion-icon> -->
+                  
                 </div>
                 <select class="sel"></select>
               </li>
@@ -380,15 +320,11 @@
               <li class="row to">
                 <select class="sel"></select>
                 <div class="icons">
-                  <!-- <ion-icon id="to" name="volume-medium-outline"></ion-icon>
-                  <ion-icon id="to" name="copy-outline"></ion-icon> -->
+                  
                 </div>
               </li>
             </ul>
-            <!-- <div class="card-icon">
-              <img src="./assets/images/category-4.svg" width="40" height="40" loading="lazy"
-                alt="Hybrid Distance Programs" class="img">
-            </div>
+            
 
             <h3 class="h3">
               <a href="#" class="card-title">Hybrid Distance Programs</a>
@@ -448,28 +384,14 @@
               <h2 class="message"></h2>
               <span class="h2">Translated Text</span>
             </div>
-            <!-- <div class="card-icon">
-              <img src="—Pngtree—upload cloud vector icon_3876265.png" width="40" height="40" loading="lazy"
-                alt="Non-Degree Programs" class="img">
-            </div> -->
+            
 
             <div class="ocr2">
-              <!-- <h1>Image And PDF OCR Tool</h1>
-              <h2 class="message"></h2>
-              <span>Select a File</span> -->
-              <!-- <input type="file" class="file">
-              <button class="btn1"><strong>Perform OCR</strong></button>
-              <span>Result Text</span> -->
-              <textarea class="to-text"></textarea>
+              
+              <textarea class="texttext to-text" style="font-family: 'Comic Sans MS', cursive; color: black; background-color: white; font-size: large;"
+                  class="w-11/12 md:h-2/3 m-2 p-2 border-blue-900 rounded-lg border self-center justify-center"
+                  name="data" id="data" cols="30" rows="10" placeholder="Translated text" required="required"></textarea>
           </div>
-<!--             <iframe
-            src="https://www.chatbase.co/chatbot-iframe/DuZvWMBFNx5KOhya3FYw0"
-            width="100%"
-            style="height: 100%; min-height: 700px"
-            frameborder="0"
-            ></iframe> -->
-
-
           <script>
               const languages = {
               "bn-IN": "Bengali",
@@ -608,14 +530,6 @@
           </style>
 
           </div>
-          <iframe
-          src="https://www.chatbase.co/chatbot-iframe/DuZvWMBFNx5KOhya3FYw0"
-          width="100%"
-          style="height: 100%; min-height: 700px"
-          frameborder="0"
-          ></iframe>
-<!--           <script type='module' src='https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js'></script>
-<zapier-interfaces-page-embed page-id='clptztkao0018eth2mtnxapin' no-background='false'  style='max-width: 900px; height: 500px;'></zapier-interfaces-page-embed> -->
         </li>
       </section>
       
@@ -636,8 +550,6 @@
                 class="img-cover">
             </div>
 
-            <!-- <img src="./assets/images/about-shape-1.svg" width="360" height="420" loading="lazy" alt=""
-              class="shape about-shape-1"> -->
 
             <img src="about-shape-2.svg" width="371" height="220" loading="lazy" alt=""
               class="shape about-shape-2">
@@ -716,12 +628,6 @@
                     alt="Build Responsive Real- World Websites with HTML and CSS" class="img-cover">
                 </figure>
 
-                <!-- <div class="abs-badge">
-                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                 <span class="span">3 Weeks</span> -->
-                <!-- </div> -->
-
                 <div class="card-content">
 
                   <span class="badge">Beginner</span>
@@ -774,12 +680,6 @@
                   <img src="course-2.jpg" width="370" height="220" loading="lazy"
                     alt="Java Programming Masterclass for Software Developers" class="img-cover">
                 </figure>
-
-                <!-- <div class="abs-badge">
-                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                  <span class="span">8 Weeks</span>
-                </div> -->
 
                 <div class="card-content">
 
@@ -908,35 +808,8 @@
         style="background-image: url('video-bg.png')">
         <div class="container">
 
-          <!-- <div class="video-card">
-
-            <div class="video-banner img-holder has-after" style="--width: ; --height: ;">
-              <img src="./assets/images/video-banner.jpg" width="970" height="550" loading="lazy" alt="video banner"
-                class="img-cover">
-
-              <button class="play-btn" aria-label="play video">
-                <ion-icon name="play" aria-hidden="true"></ion-icon>
-              </button>
-            </div>
-
-            <img src="./assets/images/video-shape-1.png" width="1089" height="605" loading="lazy" alt=""
-              class="shape video-shape-1">
-
-            <img src="./assets/images/video-shape-2.png" width="158" height="174" loading="lazy" alt=""
-              class="shape video-shape-2">
-
-          </div> -->
-
         </div>
       </section>
-
-
-
-
-
-      <!-- 
-        - #STATE
-      -->
 
       <section class="section stats" aria-label="stats">
         <div class="container">
@@ -951,14 +824,6 @@
               </div>
             </li>
 
-            <!-- <li>
-              <div class="stats-card" style="--color: 351, 83%, 61%">
-                <h3 class="card-title">32.4K</h3>
-
-                <p class="card-text">Class Completed</p>
-              </div>
-            </li> -->
-
             <li>
               <div class="stats-card" style="--color: 260, 100%, 67%">
                 <h3 class="card-title">100%</h3>
@@ -967,190 +832,11 @@
               </div>
             </li>
 
-            <!-- <li>
-              <div class="stats-card" style="--color: 42, 94%, 55%">
-                <h3 class="card-title">354+</h3>
-
-                <p class="card-text">Top Instructors</p>
-              </div>
-            </li> -->
-
           </ul>
 
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #BLOG
-      -->
-
-      <!-- <section class="section blog has-bg-image" id="blog" aria-label="blog"
-        style="background-image: url('./assets/images/blog-bg.svg')">
-        <div class="container">
-
-          <p class="section-subtitle">Latest Articles</p>
-
-          <h2 class="h2 section-title">Get News With Eduweb</h2>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
-                  <img src="./assets/images/blog-1.jpg" width="370" height="370" loading="lazy"
-                    alt="Become A Better Blogger: Content Planning" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <a href="#" class="card-btn" aria-label="read more">
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                  <a href="#" class="card-subtitle">Online</a>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Become A Better Blogger: Content Planning</a>
-                  </h3>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">Oct 10, 2021</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">Com 09</span>
-                    </li>
-
-                  </ul>
-
-                  <p class="card-text">
-                    Lorem Ipsum Dolor Sit Amet Cons Tetur Adipisicing Sed.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
-                  <img src="./assets/images/blog-2.jpg" width="370" height="370" loading="lazy"
-                    alt="Become A Better Blogger: Content Planning" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <a href="#" class="card-btn" aria-label="read more">
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                  <a href="#" class="card-subtitle">Online</a>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Become A Better Blogger: Content Planning</a>
-                  </h3>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">Oct 10, 2021</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">Com 09</span>
-                    </li>
-
-                  </ul>
-
-                  <p class="card-text">
-                    Lorem Ipsum Dolor Sit Amet Cons Tetur Adipisicing Sed.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder has-after" style="--width: 370; --height: 370;">
-                  <img src="./assets/images/blog-3.jpg" width="370" height="370" loading="lazy"
-                    alt="Become A Better Blogger: Content Planning" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <a href="#" class="card-btn" aria-label="read more">
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                  <a href="#" class="card-subtitle">Online</a>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Become A Better Blogger: Content Planning</a>
-                  </h3>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">Oct 10, 2021</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">Com 09</span>
-                    </li>
-
-                  </ul>
-
-                  <p class="card-text">
-                    Lorem Ipsum Dolor Sit Amet Cons Tetur Adipisicing Sed.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-          <img src="./assets/images/blog-shape.png" width="186" height="186" loading="lazy" alt=""
-            class="shape blog-shape">
-
-        </div>
-      </section> -->
-
-    </article>
-  </main>
-
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
 
   <footer class="footer" style="background-image: url('footer-bg.png')">
 
@@ -1258,16 +944,6 @@
           <p class="footer-list-text">
             Enter your email address to register to our newsletter subscription
           </p>
-
-          <!-- <form action="" class="newsletter-form">
-            <input type="email" name="email_address" placeholder="Your email" required class="input-field">
-
-            <button type="submit" class="btn has-before">
-              <span class="span">Premium</span>
-
-              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-            </button>
-          </form> -->
 
           <ul class="social-list">
 
